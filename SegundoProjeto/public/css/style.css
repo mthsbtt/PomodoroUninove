@@ -1,0 +1,79 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');*/
+
+*{
+   padding: o;
+   margin: 0; 
+}
+
+input{
+    width: 150px !important;
+    height: 150px !important;
+    font-size: 50pt !important;
+    text-align: center !important;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+input[type="number"]{
+    -moz-box-pack: none;
+}
+.time{
+    color: #1D3671;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto !important;
+
+}
+h2{
+    font-size: 90pt;
+}
+
+#timer{
+    display: none !important;
+}
+
+nav{
+    background-color: #1D3671 !important;
+}
+
+.form-group{
+    color: #1D3671 !important;
+    font-size: 25px !important;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35px; 
+    line-height: 39px;
+    
+    
+}
+
+.form-bg{
+    color: #1D3671 !important;
+}
+.btn:hover{
+    background-color: #fff !important; 
+    border: 1px solid #DF3414 !important;
+    color: #DF3414 !important;
+}
+
+.btlogin{
+   
+    border-radius: 5px;
+    background-color: #DF3414 !important;
+    border: 1px solid #DF3414;
+}
+
+.btlogin:hover{
+    background-color: #1D3671 !important; 
+    border: 1px solid #DF3414 !important;
+    color: #DF3414 !important;
+}
