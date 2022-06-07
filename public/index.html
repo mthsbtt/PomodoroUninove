@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="shortcut icon" href="imgem/pomodoro.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand font-weight-bold text-white" href="index.html"> <img src="./imgem/logo_test_3.jpg"></a>
+    </nav>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se conectar</p>
+                <p class="description description-primary">entre em sua conta</p>
+                <button id="signin" class="btn btn-primary" style="background-color: #DF3414 ;">Entrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Crie sua conta</h2>
+
+               <!-- <p class="description description-second">or use your email for registration:</p> -->
+                <form class="form" action="/register" method="POST">
+                    <label class="label-input text-white" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="username" type="text" name="username" placeholder="Usuário" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input id="password" type="password" name="password" placeholder="Senha" required>
+                    </label>
+
+                    <button id="btn-submit" class="btn btn-second">Registrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo(a)</h2>
+                <p class="description description-primary">Entre com seus dados</p>
+                <p class="description description-primary">para utilizar o Timer Pomodoro</p>
+                <button id="signup" class="btn btn-primary" style="background-color: #DF3414 ;">Registrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entre em sua conta</h2>
+                <!-- social media -->
+                
+                <form class="form" action="/login" method="POST">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input id="email" type="email" name="email" placeholder="Email" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" name="password" placeholder="Senha" required>
+                    </label>
+
+                    <a id="password" class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second" >Entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>
